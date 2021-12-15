@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang=en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript ej II</title>
+</head>
+
+<body>
+    <script>
+        let arrayDeNumeros = [30, 20, 10, 50, 40];
+        // let arrayDeNumeros = [30241, 23123120, 11241250, 5011231, 4125120];
+
+        function buscarNumeroMayor(array) {
+            let numeroMayor = array[0];
+            array.forEach(numero => {
+                if (numero > numeroMayor)
+                    numeroMayor = numero
+            });
+            document.write(numeroMayor);
+        }
+
+        buscarNumeroMayor(arrayDeNumeros);
+    </script>
+</body>
+
+</html>
